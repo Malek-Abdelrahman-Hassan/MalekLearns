@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MalekLearns | Learn new fields with me</title>
+    <meta name="description" content="A growing, open learning hub — book summaries, course recaps, and engineering insights. Learn and explore new fields alongside me.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/learning.css">
+</head>
+<body class="theme-studio" data-tilt="off">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="./index.html" class="nav-link active">home</a>
+                <a href="./books/" class="nav-link">books</a>
+                <a href="#explore" class="nav-link">explore</a>
+                <a href="https://malek-abdelrahman-hassan.github.io/" class="nav-link external" target="_blank" rel="noopener">portfolio</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+            <p class="hero-greeting reveal-up">// learning in public, one field at a time</p>
+            <h1 class="hero-title reveal-up" style="animation-delay:.08s">
+                Learn new fields<br><span class="name-highlight">with me.</span>
+            </h1>
+            <p class="hero-sub reveal-up" style="animation-delay:.16s">
+                This is my open notebook. Every book I read and course I take gets
+                distilled into clear, practical summaries — so you can explore and grow
+                alongside me, without the noise.
+            </p>
+            <div class="hero-actions reveal-up" style="animation-delay:.24s">
+                <a href="./books/" class="btn btn-primary"><i class="fas fa-book-open"></i> Start with a book</a>
+                <a href="#explore" class="btn btn-outline"><i class="fas fa-compass"></i> What's inside</a>
+            </div>
+            <div class="hero-meta reveal-up" style="animation-delay:.32s">
+                <div><span class="name-highlight">1</span> book summarized</div>
+                <div><strong>10</strong> chapters distilled</div>
+                <div><strong>∞</strong> more on the way</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- EXPLORE / WHAT'S INSIDE -->
+    <main>
+        <section class="section" id="explore">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-tag">what's inside</p>
+                    <h2 class="section-title">Pick a path to <span class="name-highlight">explore</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="knowledge-grid">
+                    <!-- Books (active) -->
+                    <a href="./books/" class="k-card scroll-reveal">
+                        <div class="k-head">
+                            <div class="k-icon"><i class="fas fa-book"></i></div>
+                            <span class="k-status done">Live</span>
+                        </div>
+                        <h3 class="k-title">Book Summaries</h3>
+                        <p class="k-meta"><i class="fas fa-layer-group"></i>1 book · 10 chapters</p>
+                        <p class="k-desc">Chapter-by-chapter takeaways from books worth your time — the big ideas, the traps, and the rules of thumb.</p>
+                        <span class="k-cta">Browse books <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <!-- Courses (coming soon) -->
+                    <div class="k-card is-soon scroll-reveal">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p class="k-soon-title">Course Recaps</p>
+                        <p>Notes and key lessons from courses I'm taking. Coming soon.</p>
+                    </div>
+
+                    <!-- Notes / Insights (coming soon) -->
+                    <div class="k-card is-soon scroll-reveal">
+                        <i class="fas fa-lightbulb"></i>
+                        <p class="k-soon-title">Notes &amp; Insights</p>
+                        <p>Short engineering and product insights I pick up along the way. Coming soon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED -->
+        <section class="section" style="padding-top:0;">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-tag">currently featured</p>
+                    <h2 class="section-title">Latest <span class="name-highlight">summary</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <article class="featured scroll-reveal">
+                    <div class="featured-cover"><i class="fas fa-comments"></i></div>
+                    <div>
+                        <p class="featured-eyebrow">book · customer discovery</p>
+                        <h3 class="featured-title">The Mom Test</h3>
+                        <p class="featured-meta"><i class="fas fa-user"></i> Rob Fitzpatrick &nbsp;·&nbsp; <i class="fas fa-star" style="color:var(--fn)"></i> 5/5 &nbsp;·&nbsp; 10 chapters</p>
+                        <p class="featured-desc">How to talk to customers and learn if your business is a good idea — when everyone is lying to you. A full, chapter-by-chapter summary you can read in one sitting.</p>
+                        <a href="./books/the-mom-test/" class="btn btn-primary"><i class="fas fa-book-open"></i> Read the summary</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span></div>
+            <div class="footer-socials">
+                <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fas fa-user-astronaut"></i></a>
+                <a href="https://github.com/Malek-Abdelrahman-Hassan/MalekLearns" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="footer-copy">Learning in public · &copy; <span id="year">2026</span> Malek Abdelrahman · <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener">back to portfolio</a></p>
+        </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

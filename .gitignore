@@ -1,0 +1,10 @@
+# Personal / source material — not part of the published site
+Resources/
+linkedin-posts/
+STUDIO-THEME-GUIDE.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

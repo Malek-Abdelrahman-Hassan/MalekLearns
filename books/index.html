@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Summaries | MalekLearns</title>
+    <meta name="description" content="Chapter-by-chapter book summaries — the big ideas, traps to avoid, and rules of thumb you can actually use.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/learning.css">
+</head>
+<body class="theme-studio" data-tilt="off">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">home</a>
+                <a href="./index.html" class="nav-link active">books</a>
+                <a href="../index.html#explore" class="nav-link">explore</a>
+                <a href="https://malek-abdelrahman-hassan.github.io/" class="nav-link external" target="_blank" rel="noopener">portfolio</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero">
+        <div class="container">
+            <p class="crumbs"><a href="../index.html">home</a><span>/</span>books</p>
+            <p class="page-kicker">// my reading log</p>
+            <h1 class="page-title">Book <span class="name-highlight">Summaries</span></h1>
+            <p class="page-sub">Every book, broken down chapter by chapter — the core ideas, the traps, and the rules of thumb. Read a whole book's worth of insight in a single sitting.</p>
+        </div>
+    </header>
+
+    <!-- BOOKS GRID -->
+    <main class="section" style="padding-top:32px;">
+        <div class="container">
+            <div class="knowledge-grid">
+
+                <!-- The Mom Test -->
+                <a href="./the-mom-test/" class="k-card scroll-reveal">
+                    <div class="k-head">
+                        <div class="k-icon"><i class="fas fa-comments"></i></div>
+                        <span class="k-status done">Finished</span>
+                    </div>
+                    <h3 class="k-title">The Mom Test</h3>
+                    <p class="k-meta"><i class="fas fa-user"></i>Rob Fitzpatrick &nbsp;·&nbsp; <i class="fas fa-calendar"></i>2026</p>
+                    <div class="k-rating">★★★★★</div>
+                    <p class="k-desc">How to talk to customers and learn if your idea is good — when everyone is politely lying to you.</p>
+                    <ul class="k-takeaways">
+                        <li>Never ask "is my idea good?" — ask about their life and past behavior.</li>
+                        <li>Compliments are fool's gold; commitment is the truth serum.</li>
+                        <li>Bad news early is the best possible outcome.</li>
+                    </ul>
+                    <div class="k-tags"><span class="k-tag">startups</span><span class="k-tag">customer-discovery</span><span class="k-tag">product</span></div>
+                    <span class="k-cta">Read the summary <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <!-- Placeholder -->
+                <div class="k-card is-soon scroll-reveal">
+                    <i class="fas fa-plus"></i>
+                    <p class="k-soon-title">More books on the way</p>
+                    <p>The next read is already in progress. Follow along on <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener" style="color:var(--accent)">my portfolio</a> for updates.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span></div>
+            <div class="footer-socials">
+                <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fas fa-user-astronaut"></i></a>
+                <a href="https://github.com/Malek-Abdelrahman-Hassan/MalekLearns" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="footer-copy">Learning in public · &copy; <span id="year">2026</span> Malek Abdelrahman · <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener">back to portfolio</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
