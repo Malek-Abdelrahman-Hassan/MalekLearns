@@ -19,7 +19,7 @@
     <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="../../index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span></a>
+            <a href="../../index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span><span class="logo-bracket">/&gt;</span></a>
             <div class="nav-links" id="navLinks">
                 <a href="../../index.html" class="nav-link">home</a>
                 <a href="../index.html" class="nav-link active">books</a>
@@ -32,31 +32,39 @@
     <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- BOOK HERO -->
-    <header class="page-hero">
-        <div class="container">
-            <p class="crumbs"><a href="../../index.html">home</a><span>/</span><a href="../index.html">books</a><span>/</span>the-mom-test</p>
-            <p class="page-kicker">// book summary · customer discovery</p>
-            <h1 class="page-title">The Mom <span class="name-highlight">Test</span></h1>
-            <p class="page-sub">by Rob Fitzpatrick &nbsp;·&nbsp; <span style="color:var(--fn)">★★★★★</span> &nbsp;·&nbsp; 10 chapters</p>
+    <header class="page-hero book-hero">
+        <div class="container book-hero-inner">
+            <div class="book-hero-main">
+                <p class="crumbs"><a href="../../index.html">home</a><span>/</span><a href="../index.html">books</a><span>/</span>the-mom-test</p>
+                <p class="page-kicker">// book summary · customer discovery</p>
+                <h1 class="page-title">The Mom <span class="name-highlight">Test</span></h1>
+                <p class="page-sub">by Rob Fitzpatrick &nbsp;·&nbsp; <span style="color:var(--fn)">★★★★★</span> &nbsp;·&nbsp; 10 chapters</p>
 
-            <div class="callout quote" style="max-width:760px;margin-top:24px;">
-                <span class="callout-title">The one-line idea</span>
-                <p>Don't ask anyone whether your business is a good idea. Talk about <strong>their</strong> life — their problems, workflows, and past behavior — and decide for yourself, based on facts, not compliments.</p>
+                <div class="callout quote" style="margin-top:24px;">
+                    <span class="callout-title">The one-line idea</span>
+                    <p>Don't ask anyone whether your business is a good idea. Talk about <strong>their</strong> life — their problems, workflows, and past behavior — and decide for yourself, based on facts, not compliments.</p>
+                </div>
+
+                <div class="callout important">
+                    <span class="callout-title">The Mom Test — 3 rules</span>
+                    <ol style="margin:0 0 0 18px;">
+                        <li><strong>Talk about their life</strong>, not your idea.</li>
+                        <li><strong>Ask about specifics in the past</strong>, not generics or opinions about the future.</li>
+                        <li><strong>Talk less and listen more.</strong></li>
+                    </ol>
+                </div>
+
+                <div class="page-actions">
+                    <a href="#introduction" class="btn btn-primary"><i class="fas fa-play"></i> Start reading</a>
+                    <a href="#cheatsheet" class="btn btn-outline"><i class="fas fa-list-check"></i> Jump to cheatsheet</a>
+                </div>
             </div>
 
-            <div class="callout important" style="max-width:760px;">
-                <span class="callout-title">The Mom Test — 3 rules</span>
-                <ol style="margin:0 0 0 18px;">
-                    <li><strong>Talk about their life</strong>, not your idea.</li>
-                    <li><strong>Ask about specifics in the past</strong>, not generics or opinions about the future.</li>
-                    <li><strong>Talk less and listen more.</strong></li>
-                </ol>
-            </div>
-
-            <div class="page-actions">
-                <a href="#introduction" class="btn btn-primary"><i class="fas fa-play"></i> Start reading</a>
-                <a href="#cheatsheet" class="btn btn-outline"><i class="fas fa-list-check"></i> Jump to cheatsheet</a>
-            </div>
+            <aside class="book-hero-cover">
+                <div class="book-cover">
+                    <img src="../../Covers/The%20Mom%20Test.jpg" alt="The Mom Test by Rob Fitzpatrick — book cover" loading="lazy">
+                </div>
+            </aside>
         </div>
     </header>
 
@@ -82,10 +90,20 @@
                     </nav>
                 </aside>
 
-                <!-- PROSE -->
-                <article class="prose">
+                <!-- READER (chapter carousel) -->
+                <div class="reader" id="reader">
+                    <div class="reader-bar">
+                        <button class="reader-nav" data-dir="-1" aria-label="Previous chapter"><i class="fas fa-arrow-left"></i></button>
+                        <div class="reader-status">
+                            <span class="reader-count"><span id="readerNum">01</span> / 10</span>
+                            <span class="reader-now" id="readerNow">Introduction</span>
+                        </div>
+                        <button class="reader-nav" data-dir="1" aria-label="Next chapter"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <div class="reader-viewport prose">
                     <!-- 00 INTRODUCTION -->
-                    <section id="introduction" class="section-anchor scroll-reveal">
+                    <section id="introduction" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 00</p>
                         <h2>Introduction</h2>
                         <div class="callout quote">
@@ -118,7 +136,7 @@
                     </section>
 
                     <!-- 01 THE MOM TEST -->
-                    <section id="the-mom-test" class="section-anchor scroll-reveal">
+                    <section id="the-mom-test" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 01</p>
                         <h2>The Mom Test</h2>
                         <div class="callout quote">
@@ -183,7 +201,7 @@
                     </section>
 
                     <!-- 02 AVOIDING BAD DATA -->
-                    <section id="avoiding-bad-data" class="section-anchor scroll-reveal">
+                    <section id="avoiding-bad-data" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 02</p>
                         <h2>Avoiding Bad Data</h2>
                         <div class="callout quote">
@@ -235,7 +253,7 @@
                     </section>
 
                     <!-- 03 IMPORTANT QUESTIONS -->
-                    <section id="important-questions" class="section-anchor scroll-reveal">
+                    <section id="important-questions" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 03</p>
                         <h2>Asking Important Questions</h2>
                         <div class="callout quote">
@@ -289,7 +307,7 @@
                     </section>
 
                     <!-- 04 KEEPING IT CASUAL -->
-                    <section id="keeping-it-casual" class="section-anchor scroll-reveal">
+                    <section id="keeping-it-casual" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 04</p>
                         <h2>Keeping It Casual</h2>
                         <div class="callout quote">
@@ -334,7 +352,7 @@
                     </section>
 
                     <!-- 05 COMMITMENT -->
-                    <section id="commitment" class="section-anchor scroll-reveal">
+                    <section id="commitment" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 05</p>
                         <h2>Commitment &amp; Advancement</h2>
                         <div class="callout quote">
@@ -390,7 +408,7 @@
                     </section>
 
                     <!-- 06 FINDING CONVERSATIONS -->
-                    <section id="finding-conversations" class="section-anchor scroll-reveal">
+                    <section id="finding-conversations" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 06</p>
                         <h2>Finding Conversations</h2>
                         <div class="callout quote">
@@ -439,7 +457,7 @@
                     </section>
 
                     <!-- 07 CHOOSING CUSTOMERS -->
-                    <section id="choosing-customers" class="section-anchor scroll-reveal">
+                    <section id="choosing-customers" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 07</p>
                         <h2>Choosing Your Customers</h2>
                         <div class="callout quote">
@@ -484,7 +502,7 @@
                     </section>
 
                     <!-- 08 RUNNING THE PROCESS -->
-                    <section id="running-the-process" class="section-anchor scroll-reveal">
+                    <section id="running-the-process" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 08</p>
                         <h2>Running the Process</h2>
                         <div class="callout quote">
@@ -532,7 +550,7 @@
                     </section>
 
                     <!-- 09 CONCLUSION & CHEATSHEET -->
-                    <section id="cheatsheet" class="section-anchor scroll-reveal">
+                    <section id="cheatsheet" class="chapter-slide section-anchor">
                         <p class="chapter-eyebrow">// chapter 09</p>
                         <h2>Conclusion &amp; Cheatsheet</h2>
                         <div class="callout quote">
@@ -571,17 +589,24 @@
 
                         <blockquote>"Go build your dang company already."</blockquote>
                     </section>
+                    </div><!-- /reader-viewport -->
 
-                    <!-- CTA -->
-                    <div class="cta-strip scroll-reveal">
-                        <h3>Want to learn this — and more — with me?</h3>
-                        <p>I'm sharing insights from every chapter as a learning-in-public series. New books are already on the way. Come follow along.</p>
-                        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
-                            <a href="../index.html" class="btn btn-primary"><i class="fas fa-book"></i> More summaries</a>
-                            <a href="https://malek-abdelrahman-hassan.github.io/" class="btn btn-outline" target="_blank" rel="noopener"><i class="fas fa-user-astronaut"></i> Visit my portfolio</a>
-                        </div>
+                    <div class="reader-foot">
+                        <button class="btn btn-outline reader-step" data-dir="-1"><i class="fas fa-arrow-left"></i> Previous</button>
+                        <div class="reader-dots" id="readerDots"></div>
+                        <button class="btn btn-primary reader-step" data-dir="1">Next <i class="fas fa-arrow-right"></i></button>
                     </div>
-                </article>
+                </div><!-- /reader -->
+            </div><!-- /book-layout -->
+
+            <!-- CTA -->
+            <div class="cta-strip scroll-reveal">
+                <h3>Want to learn this — and more — with me?</h3>
+                <p>I'm sharing insights from every chapter as a learning-in-public series. New books are already on the way. Come follow along.</p>
+                <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+                    <a href="../index.html" class="btn btn-primary"><i class="fas fa-book"></i> More summaries</a>
+                    <a href="https://malek-abdelrahman-hassan.github.io/" class="btn btn-outline" target="_blank" rel="noopener"><i class="fas fa-user-astronaut"></i> Visit my portfolio</a>
+                </div>
             </div>
         </div>
     </main>
@@ -589,10 +614,9 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-content">
-            <div class="footer-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span></div>
+            <div class="footer-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span><span class="logo-bracket">/&gt;</span></div>
             <div class="footer-socials">
                 <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fas fa-user-astronaut"></i></a>
-                <a href="https://github.com/Malek-Abdelrahman-Hassan/MalekLearns" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
             <p class="footer-copy">Learning in public · &copy; <span id="year">2026</span> Malek Abdelrahman · <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener">back to portfolio</a></p>
         </div>

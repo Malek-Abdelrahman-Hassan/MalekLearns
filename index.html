@@ -19,7 +19,7 @@
     <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="./index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span></a>
+            <a href="./index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span><span class="logo-bracket">/&gt;</span></a>
             <div class="nav-links" id="navLinks">
                 <a href="./index.html" class="nav-link active">home</a>
                 <a href="./books/" class="nav-link">books</a>
@@ -34,23 +34,24 @@
     <!-- HERO -->
     <header class="hero">
         <div class="container">
-            <p class="hero-greeting reveal-up">// learning in public, one field at a time</p>
-            <h1 class="hero-title reveal-up" style="animation-delay:.08s">
-                Learn new fields<br><span class="name-highlight">with me.</span>
-            </h1>
-            <p class="hero-sub reveal-up" style="animation-delay:.16s">
-                This is my open notebook. Every book I read and course I take gets
-                distilled into clear, practical summaries — so you can explore and grow
-                alongside me, without the noise.
-            </p>
-            <div class="hero-actions reveal-up" style="animation-delay:.24s">
-                <a href="./books/" class="btn btn-primary"><i class="fas fa-book-open"></i> Start with a book</a>
-                <a href="#explore" class="btn btn-outline"><i class="fas fa-compass"></i> What's inside</a>
-            </div>
-            <div class="hero-meta reveal-up" style="animation-delay:.32s">
-                <div><span class="name-highlight">1</span> book summarized</div>
-                <div><strong>10</strong> chapters distilled</div>
-                <div><strong>∞</strong> more on the way</div>
+            <div class="hero-code">
+                <p class="hero-greeting reveal-up">// learning in public, one field at a time</p>
+                <h1 class="hero-title reveal-up" style="animation-delay:.08s">
+                    Learn new fields<br><span class="name-highlight">with me.</span>
+                </h1>
+                <p class="hero-typing reveal-up" style="animation-delay:.16s">
+                    <span class="tok-kw">const</span> <span class="tok-var">focus</span> <span class="tok-op">=</span>
+                    <span class="tok-str">"<span class="typing-text" id="typingText" data-typing="Actionable book summaries|Course recaps &amp; notes|Engineering insights|Learning in public">Actionable book summaries</span>"</span><span class="tok-op">;</span><span class="typing-cursor"></span>
+                </p>
+                <p class="hero-sub reveal-up" style="animation-delay:.24s">
+                    This is my open notebook. Every book I read and course I take gets
+                    distilled into clear, practical summaries — so you can explore and grow
+                    alongside me, without the noise.
+                </p>
+                <div class="hero-actions reveal-up" style="animation-delay:.32s">
+                    <a href="./books/" class="btn btn-primary"><i class="fas fa-book-open"></i> Start with a book</a>
+                    <a href="#explore" class="btn btn-outline"><i class="fas fa-compass"></i> What's inside</a>
+                </div>
             </div>
         </div>
     </header>
@@ -60,9 +61,9 @@
         <section class="section" id="explore">
             <div class="container">
                 <div class="section-header">
-                    <p class="section-tag">what's inside</p>
-                    <h2 class="section-title">Pick a path to <span class="name-highlight">explore</span></h2>
-                    <div class="section-line"></div>
+                    <p class="section-tag scroll-reveal">explore</p>
+                    <h2 class="section-title scroll-reveal">Pick a path</h2>
+                    <div class="section-line scroll-reveal"></div>
                 </div>
 
                 <div class="knowledge-grid">
@@ -99,12 +100,12 @@
         <section class="section" style="padding-top:0;">
             <div class="container">
                 <div class="section-header">
-                    <p class="section-tag">currently featured</p>
-                    <h2 class="section-title">Latest <span class="name-highlight">summary</span></h2>
-                    <div class="section-line"></div>
+                    <p class="section-tag scroll-reveal">featured</p>
+                    <h2 class="section-title scroll-reveal">Latest summary</h2>
+                    <div class="section-line scroll-reveal"></div>
                 </div>
 
-                <article class="featured scroll-reveal">
+                <article class="featured">
                     <div class="featured-cover"><i class="fas fa-comments"></i></div>
                     <div>
                         <p class="featured-eyebrow">book · customer discovery</p>
@@ -121,10 +122,9 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-content">
-            <div class="footer-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span></div>
+            <div class="footer-logo"><span class="logo-bracket">&lt;</span>Malek<span class="logo-dot">Learns</span><span class="logo-bracket">/&gt;</span></div>
             <div class="footer-socials">
                 <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fas fa-user-astronaut"></i></a>
-                <a href="https://github.com/Malek-Abdelrahman-Hassan/MalekLearns" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
             <p class="footer-copy">Learning in public · &copy; <span id="year">2026</span> Malek Abdelrahman · <a href="https://malek-abdelrahman-hassan.github.io/" target="_blank" rel="noopener">back to portfolio</a></p>
         </div>
